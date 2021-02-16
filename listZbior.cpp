@@ -12,6 +12,7 @@
 #include <deque>
 #include <functional>
 #include <typeinfo>
+#include <set>
 #include "numbers.h"
 
 using namespace std;
@@ -32,10 +33,20 @@ void funct1(){
     //dodawanie,odejmowanie  takie samo jak w DEQUE
 }
 
+void funct2(){
+
+    cout << endl;
+
+set<string> names{"Perzyk","Lentur","Kowalik","Mozambik","Bruszcz"}; //odrazu posortowane, brak mozliwosci 2x tych samych nazwisk..
+printSTL(names , " " , true); // wyswietlenie z numbers.h ..
+
+}
+
 
 
 int main(){
     funct1();
+    funct2();
 
 return 0;
 }
