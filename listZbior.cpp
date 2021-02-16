@@ -57,12 +57,21 @@ void funct3(){
     printSTL(num2 , " " , true);
 }
 
+void multi(){
+    multiset<string> dogs{"Maksio","Mireczek","Borys","Maniek","Maniek","Kapi"}; // w multiset nazwy moga sie powtarzac!...
+    printSTL(dogs , " " , true);
+
+    cout << "Dostepne miejsce ---------> " << dogs.max_size() << endl; //ilosc dostepnego miejsca w multisecie
+}
+
 
 
 int main(){
     funct1();
     funct2();
     funct3();
+
+    multi();
 
 return 0;
 }
