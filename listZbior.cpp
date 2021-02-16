@@ -66,7 +66,12 @@ void multi(){
     printSTL(dogs , " " , true);
 }
 
+void functMap(){
 
+    cout << endl;
+    cout << "--- ---! Sekcja z mapa - multimapa !--- ---" << endl;
+
+}
 
 int main(){
     funct1();
@@ -74,6 +79,8 @@ int main(){
     funct3();
 
     multi();
+    
+    functMap();
 
 return 0;
 }
