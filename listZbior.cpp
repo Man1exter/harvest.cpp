@@ -48,7 +48,13 @@ cout << *posit << " " << success << endl;
 
 if(!names.insert("Kaczuszka").second) cout << "Juz jest dodana sialalala.." << endl; //komunikat o dodaniu
 printSTL(names , " " , true);
+}
 
+void funct3(){
+    set<int, greater<int>> num1 = {7,10,11,15,19,23,50,51,99,121}; //greater od najwyzszej do najnizszej
+    set<int, less<int>> num2 = {7,10,11,15,19,23,50,51,99,121}; //less od najmniejszej do najwiekszej
+    printSTL(num1 , " " , true);
+    printSTL(num2 , " " , true);
 }
 
 
@@ -56,6 +62,7 @@ printSTL(names , " " , true);
 int main(){
     funct1();
     funct2();
+    funct3();
 
 return 0;
 }
