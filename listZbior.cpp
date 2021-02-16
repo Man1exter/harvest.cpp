@@ -37,8 +37,17 @@ void funct2(){
 
     cout << endl;
 
-set<string> names{"Perzyk","Lentur","Kowalik","Mozambik","Bruszcz"}; //odrazu posortowane, brak mozliwosci 2x tych samych nazwisk..
+set<string> names{"Perzyk","Lentur","Kowalik","Mozambik","Bruszcz"}; //odrazu posortowane alfabetycznie, brak mozliwosci 2x tych samych nazwisk..
 printSTL(names , " " , true); // wyswietlenie z numbers.h ..
+
+names.insert({"Perzyk","Sloniczynka","Slonikowski"}); // drugi raz perzyka nie doda..
+printSTL(names , " " , true);
+
+auto[posit,success] = names.insert("Kaczuszka");
+cout << *posit << " " << success << endl;
+
+if(!names.insert("Kaczuszka").second) cout << "Juz jest dodana sialalala.." << endl; //komunikat o dodaniu
+printSTL(names , " " , true);
 
 }
 
