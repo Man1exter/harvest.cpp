@@ -19,10 +19,15 @@ using namespace std;
 
 void funct1(){
     // dodanie za ostatnym elementem, wartosci 100......
-    list<int> giLit = {1,2,3,4,4,3,2,1};
-    giLit.insert(--giLit.end(), 100);
+    list<int> giLit = {1,2,3,4,5,6,7,8,9};
+    giLit.insert(--giLit.end(), 100); // tutaj te dodanie
     printSTL(giLit , " " , true );
     //-------------------------------------------
+    cout << endl;
+
+    for(auto iter=giLit.begin(); iter != giLit.end(); ++iter){
+        cout << *iter << endl;
+    }
 }
 
 
