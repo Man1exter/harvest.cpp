@@ -61,7 +61,9 @@ void multi(){
     multiset<string> dogs{"Maksio","Mireczek","Borys","Maniek","Maniek","Kapi"}; // w multiset nazwy moga sie powtarzac!...
     printSTL(dogs , " " , true);
 
-    cout << "Dostepne miejsce ---------> " << dogs.max_size() << endl; //ilosc dostepnego miejsca w multisecie
+    cout << "Dostepne miejsce w multiset ---------> " << dogs.max_size() << endl; //ilosc dostepnego miejsca w multisecie
+    cout << "Rozmiar multiset'u -------------> " << dogs.size() << endl;
+    printSTL(dogs , " " , true);
 }
 
 
