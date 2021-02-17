@@ -92,6 +92,43 @@ void functMap(){
 
 }
 
+void functMap2(){
+    cout << endl;
+    cout << endl;
+    cout << endl;
+
+    map<int,string>osoba;
+    osoba = {
+      {1,"Policjant"},
+      {2,"Lekarz"},
+      {3,"Programista"},
+      {4,"Prokurator"},
+      {5,"Spawacz"},
+      {6,"Pielęgniarz"},
+      {7,"Pracownik"},
+    };
+    for(auto e: osoba){
+        cout << e.first << " ======> " << e.second << endl;
+    }
+    cout << " Rozmiar ======> " << " [ " << osoba.size() << " ] " << endl;
+}
+
+void algorfunct(){
+    cout << endl;
+    cout << endl;
+    cout << endl;
+
+    cout << "Poszczegolne algorytmy na vector'ze" << endl;
+
+    cout << endl;
+
+   vector<int> numbers{1,3,5,7,9,11,13,15,17,19,21,23};
+   printSTL(numbers , " " , true);
+   cout << " rozmiar =======> " << numbers.size() << endl;
+   cout << " maxymalny mozliwy rozmiar ======> "<< numbers.max_size() << endl;
+
+}
+
 int main(){
     funct1();
     funct2();
@@ -100,6 +137,9 @@ int main(){
     multi();
     
     functMap();
+    functMap2();
+
+    algorfunct();
 
 return 0;
 }
