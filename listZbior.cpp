@@ -84,6 +84,7 @@ void functMap(){
     cout << endl;
 
     info.insert({{10,"banda"},{11,"schodki"}}); //doda element pierwszy z dodawanych ale drugiego nie bo jest juz zajety~!
+    info[123] = "Choineczka"; // szybsze dodanie niz insert..
 
     for(auto ele: info){
         cout << ele.first << " -----> " << ele.second << endl;
