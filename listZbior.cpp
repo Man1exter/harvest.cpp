@@ -71,6 +71,24 @@ void functMap(){
     cout << endl;
     cout << "--- ---! Sekcja z mapa - multimapa !--- ---" << endl;
 
+    map<int,string> info;
+    info = {
+        {11,"Sloniczek"},
+        {12,"Kaczuszka"},
+        {16,"Misieee"},
+        {18,"Myszki"},
+    };
+    for(auto ele: info){
+        cout << ele.first << " -----> " << ele.second << endl;
+    }
+    cout << endl;
+
+    info.insert({{10,"banda"},{11,"schodki"}}); //doda element pierwszy z dodawanych ale drugiego nie bo jest juz zajety~!
+
+    for(auto ele: info){
+        cout << ele.first << " -----> " << ele.second << endl;
+    }
+
 }
 
 int main(){
