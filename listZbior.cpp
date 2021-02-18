@@ -129,6 +129,12 @@ void algorfunct(){
 
 }
 
+void numbericFunction(){
+    cout << endl; //numeric_limits<type>::max/min()
+cout << "numerowane maxymalnosci ====> INT <==== " << numeric_limits<int>::max() << endl;
+cout << "numerowane maxymalnosci ====> SHORT <==== " << numeric_limits<short>::max() << endl;
+}
+
 int main(){
     funct1();
     funct2();
@@ -140,6 +146,8 @@ int main(){
     functMap2();
 
     algorfunct();
+    numbericFunction();
+
 
 return 0;
 }
