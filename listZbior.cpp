@@ -152,7 +152,21 @@ cout << " bledy zaokraglen --> " << numeric_limits<short>::is_exact << endl;
 cout << endl;
 
 cout << " liczba bitow bez znaku --> " << numeric_limits<int>::digits << endl;
-cout << " liczba cyfer DEC --> " << numeric_limits<int>::digits10 << endl;
+cout << " liczba cyfer DEC 10 --> " << numeric_limits<int>::digits10 << endl;
+
+cout << endl;
+
+cout << " roznica wartosci 1 i najwiekszej wartosci ====> " << numeric_limits<int>::epsilon() << endl;
+cout << " wartosc dodatniej nieskonczonosci o ile jest ====> " << numeric_limits<int>::infinity() << endl;
+}
+
+void someVector(){
+
+vector<int>numb;
+for(int i = 0; i < 50; i++){
+    numb.push_back(i);
+}
+printSTL(numb," ",true);
 
 }
 
@@ -168,6 +182,8 @@ int main(){
 
     algorfunct();
     numbericFunction();
+
+    someVector();
 
 
 return 0;
