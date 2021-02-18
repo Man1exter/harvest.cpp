@@ -148,6 +148,12 @@ cout << endl;
 
 cout << " bledy zaokraglen --> " << numeric_limits<int>::is_exact << endl;
 cout << " bledy zaokraglen --> " << numeric_limits<short>::is_exact << endl;
+
+cout << endl;
+
+cout << " liczba bitow bez znaku --> " << numeric_limits<int>::digits << endl;
+cout << " liczba cyfer DEC --> " << numeric_limits<int>::digits10 << endl;
+
 }
 
 int main(){
