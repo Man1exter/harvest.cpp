@@ -137,6 +137,17 @@ cout << "numerowane maxymalnosci ====> SHORT <==== " << numeric_limits<short>::m
 cout << "numerowane minimalnosci ====> INT <==== " << numeric_limits<short>::min() << endl;
 cout << "numerowane maxymalnosci ====> LONG LONG <==== " << numeric_limits<long long>::max() << endl;
 cout << "numerowane minimalnosci ====> LONG LONG <==== " << numeric_limits<long long>::min() << endl;
+
+cout << endl;
+
+cout << " znak typu liczbowego int --> " << numeric_limits<int>::is_signed << endl;
+cout << " znak typu liczbowego short --> " << numeric_limits<short>::is_signed << endl;
+cout << " znak typu liczbowego double --> " << numeric_limits<double>::is_signed << endl;
+
+cout << endl;
+
+cout << " bledy zaokraglen --> " << numeric_limits<int>::is_exact << endl;
+cout << " bledy zaokraglen --> " << numeric_limits<short>::is_exact << endl;
 }
 
 int main(){
