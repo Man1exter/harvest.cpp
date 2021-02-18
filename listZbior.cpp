@@ -132,7 +132,11 @@ void algorfunct(){
 void numbericFunction(){
     cout << endl; //numeric_limits<type>::max/min()
 cout << "numerowane maxymalnosci ====> INT <==== " << numeric_limits<int>::max() << endl;
+cout << "numerowane minimalnosci ====> INT <==== " << numeric_limits<int>::min() << endl;
 cout << "numerowane maxymalnosci ====> SHORT <==== " << numeric_limits<short>::max() << endl;
+cout << "numerowane minimalnosci ====> INT <==== " << numeric_limits<short>::min() << endl;
+cout << "numerowane maxymalnosci ====> LONG LONG <==== " << numeric_limits<long long>::max() << endl;
+cout << "numerowane minimalnosci ====> LONG LONG <==== " << numeric_limits<long long>::min() << endl;
 }
 
 int main(){
